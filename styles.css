@@ -1,0 +1,118 @@
+body{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:100vh;
+   margin:0;
+   background-color: rgb(186, 216, 240);
+   overflow: hidden; 
+}
+.container{
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    position: absolute;
+    color: red;
+    font-size: 3.2em;
+    font-style: bold;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+}
+.withComputer{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+#gameContainer{
+    margin-top: 20px;
+}
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+#playButton,#playComputer{
+    color:rgb(255, 222, 9);
+    border: none;
+    border-radius: 1px;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: coral;
+    display: inline-block;
+    margin: 5px;
+}
+#playButton:hover,
+#playComputer:hover{
+background-color: rgb(255, 255, 255);
+}
+.hidden{
+    display: none;
+}
+#thankYoumsg{
+    color: red;
+    font-size: 2em;
+    align-items: center;
+    font-style: italic;
+    justify-content: center;
+}
+.cell{
+    width:100px;
+    height:100px;
+    border: 2px solid #ffffff;
+    background-color: aliceblue;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #0d091d;
+}
+.status{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.reset{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: coral;
+    color: rgb(255, 222, 9);
+    transition: background-color 0.3s ease;
+}
+#reset:hover{
+    background-color: #fff;
+}
+#goBack{
+margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: coral;
+    color: rgb(255, 222, 9);
+    transition: background-color 0.3s ease;
+}
+#reset:hover {
+    background-color: #fff;
+}
+.black-test{
+    color:#D7EDE9;
+}
